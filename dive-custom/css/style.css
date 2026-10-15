@@ -1,0 +1,353 @@
+/* 全体設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Osaka, Meiryo, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-logo {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #00a040;
+}
+
+.header-logo span {
+  background-color: #00a040;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+/* メインビジュアル / バナー */
+.hero-banner {
+  background: linear-gradient(180deg, #70c3f5 0%, #aee3f8 40%, #e0f2fe 65%, #00a896 66%, #028090 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px 20px;
+  position: relative;
+}
+
+.hero-title-sub {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111111;
+  text-shadow: 1px 1px 2px #ffffff;
+  margin-bottom: 5px;
+}
+
+.hero-title-main {
+  font-size: 42px;
+  font-weight: 900;
+  color: #d4af37; /* ゴールド系 */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 0 10px #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero-title-count {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  margin-bottom: 30px;
+}
+
+/* チキン商品3種並び */
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 15px;
+  width: 260px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.product-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+  background-color: #e29578;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+
+.product-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 12px;
+}
+
+.banner-note {
+  font-size: 11px;
+  color: #333333;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Web限定キャンペーンセクション */
+.campaign-section {
+  background-color: #009e49; /* ファミマグリーン */
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.inner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.campaign-title {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.campaign-text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* クーポンの配布方法セクション */
+.coupon-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111111;
+  border-bottom: 3px solid #111111;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.step-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.step-list li {
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.note-text {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+/* テーブル */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.info-table th {
+  background-color: #b9dbe9;
+  color: #333333;
+  width: 30%;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  font-weight: normal;
+}
+
+.info-table td {
+  background-color: #ffffff;
+  padding: 12px 15px;
+  border: 1px solid #cccccc;
+  color: #555555;
+}
+
+/* 申し込みフォームセクション */
+.form-section {
+  background-color: #008cd6; /* ファミマブルー */
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.form-label::before {
+  content: "◆ ";
+  font-size: 12px;
+}
+
+.input-text {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  outline: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-label input {
+  margin-right: 8px;
+  accent-color: #00a040;
+}
+
+.submit-btn-container {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.submit-btn {
+  background-color: #4ebbb5; /* ターコイズグリーン風 */
+  color: #ffffff;
+  border: none;
+  padding: 14px 80px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #3da39d;
+}
+
+/* ファミマではたらく？ バナー */
+.recruit-banner {
+  background-color: #00a040;
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.recruit-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.external-link-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* フッター */
+.footer {
+  background-color: #ffffff;
+  color: #666666;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.footer-address {
+  margin-bottom: 8px;
+}
+
+.copyright {
+  color: #888888;
+}
+
+/* レスポンシブ対応 (スマホ表示) */
+@media (max-width: 600px) {
+  .hero-title-main {
+    font-size: 32px;
+  }
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 14px 0;
+  }
+  .recruit-title {
+    font-size: 36px;
+  }
+}
